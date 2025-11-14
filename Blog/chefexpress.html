@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express: Recetas en 20 Minutos | Chef Express</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">Chef Express.</div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="Blog.html">Inicio</a></li>
+                <li><a href="chefexpress.html">Recetas</a></li>
+                <li><a href="categoria-desayunos.html">Desayunos</a></li>
+                <li><a href="sobremi.html">Sobre mí</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger-menu">☰</button>
+    </header>
+
+    <section class="category-banner">
+        <div class="banner-content">
+            <h1>Express: Recetas en 20 Minutos</h1>
+            <p>Comer gourmet no tiene que tomar todo el día. Platos de impacto, hechos antes de que termine la serie.</p>
+        </div>
+    </section>
+
+    <div class="main-container category-layout">
+
+        <main class="category-listing">
+            
+            <div class="recipe-grid">
+                
+                <article class="recipe-card">
+                    <a href="Chefexpres/express-ramen.html" class="card-image-link">
+                        <img src="FOTOS/ramen.jpg" alt="Ramen de 15 Minutos" class="card-image">
+                    </a>
+                    <div class="card-content">
+                        <div class="recipe-meta-tags">
+                            <span class="tag tag-time">15 Minutos</span>
+                            <span class="tag tag-difficulty">Fácil</span>
+                        </div>
+                        <h2 class="card-title">
+                            <a href="Chefexpres/express-ramen.html">Ramen de 15 Minutos con Huevo Poché</a>
+                        </h2>
+                        <p class="card-excerpt">Eleva el ramen instantáneo a nivel de restaurante con este tip de huevo pochado y tres toppings que tienes en casa.</p>
+                        <a href="Chefexpres/express-ramen.html" class="article-button primary-button">Ver Receta &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="recipe-card">
+                    <a href="Chefexpres/express-tacos.html" class="card-image-link">
+                        <img src="FOTOS/tacos.jpg" alt="Tacos Gourmet" class="card-image">
+                    </a>
+                    <div class="card-content">
+                        <div class="recipe-meta-tags">
+                            <span class="tag tag-time">20 Minutos</span>
+                            <span class="tag tag-difficulty">Medio</span>
+                        </div>
+                        <h2 class="card-title">
+                            <a href="Chefexpres/express-tacos.html">Tacos de Pescado Rebozado Rápido</a>
+                        </h2>
+                        <p class="card-excerpt">Comida de calle con sabor de restaurante. Crujientes, frescos y perfectos para una noche de estudio.</p>
+                        <a href="Chefexpres/express-tacos.html" class="article-button primary-button">Ver Receta &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="recipe-card">
+                    <a href="Chefexpres/express-pasta.html" class="card-image-link">
+                        <img src="FOTOS/pasta.jpg" alt="Pasta al Pesto Rápida" class="card-image">
+                    </a>
+                    <div class="card-content">
+                        <div class="recipe-meta-tags">
+                            <span class="tag tag-time">18 Minutos</span>
+                            <span class="tag tag-difficulty">Fácil</span>
+                        </div>
+                        <h2 class="card-title">
+                            <a href="Chefexpres/express-pasta.html">Pasta al Pesto con Tomate Seco</a>
+                        </h2>
+                        <p class="card-excerpt">Un plato italiano de alta cocina listo en lo que tarda la pasta en cocinarse. Sabor sedoso y con cuerpo.</p>
+                        <a href="Chefexpres/express-pasta.html" class="article-button primary-button">Ver Receta &rarr;</a>
+                    </div>
+                </article>
+                
+                <article class="recipe-card">
+                    <a href="Chefexpres/express-sopa.html" class="card-image-link">
+                        <img src="FOTOS/sopa.jpg" alt="Sopa de tomate" class="card-image">
+                    </a>
+                    <div class="card-content">
+                        <div class="recipe-meta-tags">
+                            <span class="tag tag-time">12 Minutos</span>
+                            <span class="tag tag-difficulty">Fácil</span>
+                        </div>
+                        <h2 class="card-title">
+                            <a href="Chefexpres/express-sopa.html">Sopa de Tomate Asado Express</a>
+                        </h2>
+                        <p class="card-excerpt">Calidez gourmet. El secreto para una sopa con sabor "a asado" es usar tomates enlatados y especias clave.</p>
+                        <a href="Chefexpres/express-sopa.html" class="article-button primary-button">Ver Receta &rarr;</a>
+                    </div>
+                </article>
+
+            </div>
+        </main>
+
+        <aside class="main-sidebar">
+            <div class="widget author-info">
+                <img src="FOTOS/alex.png" alt="Foto de perfil de Leo Vidal" class="profile-photo">
+                <h3>Leo Vidal</h3>
+                <p>Estudiante de día, chef aficionado por la noche. Comparto recetas rápidas y económicas que parecen hechas por un profesional.</p>
+            </div>
+            
+            <div class="widget subscribe-box">
+                <h4>Suscríbete al Newsletter</h4>
+                <p>Recibe la dosis semanal de trucos de cocina y recetas gourmet.</p>
+                
+                >           <form id="subscriptionform">
+                            <input type="email" placeholder="Tu Email..." class="subscribe-input" name="email" required>
+                            <button type="submit" class="subscribe-button">¡Quiero ser Chef Express!</button>
+                </form>
+            </div>  
+        </aside>
+
+    </div> 
+    
+    <footer class="main-footer">
+        <nav class="footer-nav">
+            <a href="contacto.html">Contacto</a>
+            <a href="Blog.html">Inicio</a> |
+            <a href="#">Política de Privacidad</a>
+        </nav>
+        <p>&copy; 2025 Chef Express. Leo Vidal. Todos los derechos reservados.</p>
+    </footer>
+
+</footer>
+
+    <script src="app.js"></script> </body>
+</html>

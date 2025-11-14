@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Chef Express</title>
+    
+    <link rel="stylesheet" href="style.css"> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">Chef Express.</div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="Blog.html">Inicio</a></li>
+                <li><a href="chefexpress.html">Recetas</a></li>
+                <li><a href="categoria-desayunos.html">Desayunos</a></li>
+                <li><a href="sobremi.html">Sobre mí</a></li>
+                <li><a href="contacto.html">Contacto</a></li> 
+            </ul>
+        </nav>
+        <button class="hamburger-menu">☰</button>
+    </header>
+
+    <section class="category-banner">
+        <div class="banner-content">
+            <h1>Contacto</h1>
+            <p>¿Tienes una pregunta, sugerencia o quieres colaborar? Escríbeme.</p>
+        </div>
+    </section>
+
+    <div class="main-container category-layout">
+
+        <main class="category-listing">
+            
+            <h2>Envíame un mensaje</h2>
+            <p>Usa el formulario de abajo para contactarme directamente. Intento responder en menos de 48 horas.</p>
+
+            <form action="#" method="POST" class="contact-form">
+                
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Tu Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" name="asunto">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="8" required></textarea>
+                </div>
+                
+                <button type="submit" class="article-button primary-button">Enviar Mensaje</button>
+                
+            </form>
+
+        </main>
+
+        <aside class="main-sidebar">
+            <div class="widget author-info">
+                <img src="FOTOS/alex.png" alt="Foto de perfil de Leo Vidal" class="profile-photo">
+                <h3>Leo Vidal</h3>
+                <p>Estudiante de día, chef aficionado por la noche. Comparto recetas rápidas y económicas que parecen hechas por un profesional.</p>
+            </div>
+            
+            <div class="widget subscribe-box">
+                <h4>Suscríbete al Newsletter</h4>
+                <p>Recibe la dosis semanal de trucos de cocina y recetas gourmet.</p>
+                
+                >           <form id="subscriptionform">
+                            <input type="email" placeholder="Tu Email..." class="subscribe-input" name="email" required>
+                            <button type="submit" class="subscribe-button">¡Quiero ser Chef Express!</button>
+                </form>
+            </div> 
+        </aside>
+
+    </div> 
+    
+    <footer class="main-footer">
+        <nav class="footer-nav">
+            
+            <a href="Blog.html">Inicio</a> |
+            <a href="#">Política de Privacidad</a>
+        </nav>
+        <p>&copy; 2025 Chef Express. Leo Vidal. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</footer>
+
+    <script src="app.js"></script> </body>
+</html>

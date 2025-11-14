@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Técnicas Base del Chef | Chef Express</title>
+    
+    <link rel="stylesheet" href="style.css"> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">Chef Express.</div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="Blog.html">Inicio</a></li>
+                <li><a href="chefexpress.html">Recetas</a></li> 
+                <li><a href="categoria-desayunos.html">Desayunos</a></li>
+                <li><a href="sobremi.html">Sobre mí</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger-menu">☰</button>
+    </header>
+
+    <section class="category-banner">
+        <div class="banner-content">
+            <h1>Técnicas Base del Chef</h1>
+            <p>Los fundamentos que separan a un aficionado de un profesional. Domina esto y dominarás la cocina.</p>
+        </div>
+    </section>
+
+    <div class="main-container category-layout">
+
+        <main class="category-listing">
+            
+            <div class="recipe-grid">
+                
+                <article class="recipe-card">
+                    <a href="tecnicas/tecnica-cortes.html" class="card-image-link">
+                        <img src="FOTOS/picar.jpg" alt="Técnica de cortes de vegetales" class="card-image">
+                    </a>
+                    <div class="card-content">
+                        <div class="recipe-meta-tags">
+                            <span class="tag tag-time">Cuchillo</span>
+                            <span class="tag tag-difficulty">Fundamental</span>
+                        </div>
+                        <h2 class="card-title">
+                            <a href="tecnica-cortes.html">El Arte de Picar: Brunoise, Juliana y Chiffonade</a>
+                        </h2>
+                        <p class="card-excerpt">La base de cualquier sofrito. Aprende a hacer cortes precisos y rápidos que garantizan una cocción uniforme.</p>
+                        <a href="tecnicas/tecnica-cortes.html" class="article-button primary-button">Ver Técnica &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="recipe-card">
+                    <a href="tecnicas/tecnica-fondos.html" class="card-image-link">
+                        <img src="FOTOS/caldos.jpg" alt="Preparación de un fondo o caldo" class="card-image">
+                    </a>
+                    <div class="card-content">
+                        <div class="recipe-meta-tags">
+                            <span class="tag tag-time">Olla</span>
+                            <span class="tag tag-difficulty">Esencial</span>
+                        </div>
+                        <h2 class="card-title">
+                            <a href="tecnica-fondos.html">Fondos y Caldos: La Base del Sabor</a>
+                        </h2>
+                        <p class="card-excerpt">El secreto de las sopas, salsas y guisos de un chef. Te enseñamos a hacer un fondo claro y uno oscuro.</p>
+                        <a href="tecnicas/tecnica-fondos.html" class="article-button primary-button">Ver Técnica &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="recipe-card">
+                    <a href="tecnicas/tecnica-salsas.html" class="card-image-link">
+                        <img src="FOTOS/salsas.jpg" alt="Emulsionando una salsa madre" class="card-image">
+                    </a>
+                    <div class="card-content">
+                        <div class="recipe-meta-tags">
+                            <span class="tag tag-time">Sartén</span>
+                            <span class="tag tag-difficulty">Clásico</span>
+                        </div>
+                        <h2 class="card-title">
+                            <a href="tecnica-salsas.html">Salsas Madre: Bechamel y Velouté Express</a>
+                        </h2>
+                        <p class="card-excerpt">Domina el 'Roux' y podrás crear la base de un Mac & Cheese gourmet, una lasaña o una salsa cremosa.</p>
+                        <a href="tecnicas/tecnica-salsas.html" class="article-button primary-button">Ver Técnica &rarr;</a>
+                    </div>
+                </article>
+                
+                
+                </div>
+        </main>
+
+        <aside class="main-sidebar">
+            <div class="widget author-info">
+                <img src="/FOTOS/alex.png" alt="Foto de perfil de Leo Vidal" class="profile-photo">
+                <h3>Leo Vidal</h3>
+                <p>Estudiante de día, chef aficionado por la noche. Comparto recetas rápidas y económicas que parecen hechas por un profesional.</p>
+            </div>
+            
+            <div class="widget subscribe-box">
+                <h4>Suscríbete al Newsletter</h4>
+                <p>Recibe la dosis semanal de trucos de cocina y recetas gourmet.</p>
+                <form id="subscriptionform">
+                    <input type="email" placeholder="Tu Email..." class="subscribe-input" name="email" required>
+                    <button type="submit" class="subscribe-button">¡Quiero ser Chef Express!</button>
+                </form>
+            </div>
+        </aside>
+
+    </div> 
+    
+    <footer class="main-footer">
+        <nav class="footer-nav">
+            <a href="contacto.html">Contacto</a>
+            <a href="Blog.html">Inicio</a> |
+            <a href="#">Política de Privacidad</a>
+        </nav>
+        <p>&copy; 2025 Chef Express. Leo Vidal. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

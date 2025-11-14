@@ -1,0 +1,829 @@
+/* =================================================================
+   STYLE.CSS - Archivo Maestro Unificado para Chef Express
+   ================================================================= */
+
+/* --- Reseteo Básico y Globales --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+    color: #212121; /* Texto Base */
+    background-color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    color: #212121;
+}
+
+/* Regla de Oro: Imágenes Responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ---
+Variables (Opcional pero recomendado - copiado de tus archivos)
+--- */
+:root {
+    --color-primary: #D32F2F; 
+    --color-secondary: #4A4A4A;
+    --color-text-dark: #212121;
+    --color-text-light: #555;
+    --font-sans: 'Montserrat', 'Helvetica Neue', sans-serif; 
+    --spacing-large: 3.5rem; /* 56px */
+    --spacing-medium: 1.5rem; /* 24px */
+    --spacing-small: 0.75rem; /* 12px */
+}
+
+/* ---------------------------------- */
+/* 1. Header/Navegación (Común) */
+/* ---------------------------------- */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 56px;
+    border-bottom: 2px solid #D32F2F; /* Rojo */
+}
+
+.logo {
+    font-family: 'Montserrat', 'Helvetica Neue', sans-serif; 
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #D32F2F; /* Rojo */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li a {
+    color: #212121;
+    margin-left: 24px;
+    transition: color 0.3s;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.nav-list li a:hover {
+    color: #D32F2F; /* Rojo */
+}
+
+.hamburger-menu {
+    display: none; 
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* ---------------------------------- */
+/* 2. Estilos de Portada (de index3.css) */
+/* ---------------------------------- */
+.hero-section {
+    background-image: url('/FOTOS/alex.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 60vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding: 24px 56px;
+}
+
+.hero-content h1 {
+    font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 24px;
+    font-weight: 300;
+}
+
+.cta-button {
+    color: white;
+    background-color: #D32F2F; /* Rojo */ 
+    border: 2px solid #D32F2F; /* Rojo */
+    padding: 12px 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #4A4A4A; /* Gris Medio */
+    border-color: #4A4A4A; /* Gris Medio */
+}
+
+.category-highlights {
+    padding: 56px 5%;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.category-highlights h2 {
+    font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #212121;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.category-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 16px;
+    transition: background-color 0.3s;
+}
+
+.category-card:hover .card-overlay {
+    background-color: rgba(211, 47, 47, 0.75); /* Rojo con transparencia */
+}
+
+.card-overlay h3 {
+    font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+    font-size: 19px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* ---------------------------------- */
+/* 3. Banner de Categoría (Común) */
+/* ---------------------------------- */
+.category-banner {
+    background-color: #D32F2F; /* Rojo */
+    color: white;
+    padding: 56px 5%;
+    text-align: center;
+}
+
+.banner-content h1 {
+    font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.banner-content p {
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ---------------------------------- */
+/* 4. Contenedor Principal (Layout Grid) */
+/* ---------------------------------- */
+.main-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 2/3 Contenido, 1/3 Sidebar */
+    gap: 56px;
+    padding: 56px 5%;
+}
+
+.category-layout {
+    /* Esto es un padding extra para páginas sin hero */
+    padding-top: 56px;
+}
+
+/* ---------------------------------- */
+/* 5. Listados de Artículos */
+/* ---------------------------------- */
+
+/* A. Listado de Portada (de index3.css) */
+.article-section h2 {
+    font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    border-bottom: 3px solid #4A4A4A; /* Gris Medio */
+    padding-bottom: 8px;
+    color: #212121;
+}
+
+.article-card {
+    display: flex;
+    margin-bottom: 56px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 56px;
+}
+
+.article-image {
+    width: 40%;
+    height: 250px;
+    object-fit: cover;
+    margin-right: 24px;
+    border-radius: 4px;
+}
+
+.article-info {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-info h3 {
+    font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 8px 0;
+    line-height: 1.2;
+}
+
+.article-category {
+    font-size: 13px;
+    color: #D32F2F; /* Rojo */
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.article-excerpt {
+    color: #555; /* Texto claro */
+    font-size: 16px;
+    margin-bottom: 16px;
+    flex-grow: 1;
+}
+
+
+/* B. Grid de Recetas (de chefexpress.css) */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columnas */
+    gap: 30px;
+}
+
+.recipe-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    overflow: hidden; /* Para los bordes de la imagen */
+    display: flex; /* Clave para altura uniforme */
+    flex-direction: column;
+    transition: box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card-image-link {
+    display: block;
+    overflow: hidden; /* Para el efecto zoom */
+}
+
+.card-image {
+    width: 100%;
+    height: 200px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra sin deformarse */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover .card-image {
+    transform: scale(1.05); /* Efecto zoom al pasar el mouse */
+}
+
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Clave para que la tarjeta ocupe el espacio */
+}
+
+.recipe-meta-tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.tag {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px; /* Forma de píldora */
+    text-transform: uppercase;
+}
+
+.tag-time {
+    background-color: #FEEEEE; /* Rojo muy claro */
+    color: #D32F2F; /* Rojo principal */
+}
+
+.tag-difficulty {
+    background-color: #f0f0f0; /* Gris claro */
+    color: #4A4A4A; /* Gris oscuro */
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.card-title a {
+    color: #212121;
+    transition: color 0.3s ease;
+}
+
+.card-title a:hover {
+    color: #D32F2F; /* Rojo */
+}
+
+.card-excerpt {
+    font-size: 15px;
+    color: #555; /* Texto claro */
+    margin-bottom: 20px;
+    flex-grow: 1; /* Clave para empujar el botón al fondo */
+}
+
+/* ---------------------------------- */
+/* 6. Contenido Estático (Sobre Mí, Café) */
+/* (de chefexpress.css y desayunos.css) */
+/* ---------------------------------- */
+.hero-section-sobremi {
+    background-image: url('/FOTOS/alex.png'); 
+    background-size: cover;
+    background-position: center;
+    
+    height: 60vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+
+
+.article-main-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 24px; /* 1.5rem */
+}
+
+.static-article-content h2 {
+    font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+    font-size: 32px; /* 2rem */
+    font-weight: 900;
+    color: #D32F2F; /* Rojo */
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.static-article-content h3 {
+    font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+    font-size: 26px; /* 1.6rem */
+    font-weight: 700;
+    color: #212121;
+    margin-top: 56px;
+    margin-bottom: 12px;
+}
+
+.static-article-content h4 {
+    font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+    font-size: 19px; /* 1.2rem */
+    font-weight: 700;
+    color: #4A4A4A;
+    margin-top: 24px;
+    margin-bottom: 4px;
+}
+
+.static-article-content p {
+    font-size: 18px; /* 1.1rem */
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 24px;
+}
+
+.static-article-content ul,
+.static-article-content ol {
+    font-size: 18px; /* 1.1rem */
+    color: #555;
+    padding-left: 40px; /* 2.5rem */
+    margin-bottom: 24px;
+}
+
+.static-article-content li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.static-article-content ul li {
+    list-style-type: '☕'; /* Estilo de viñeta de café */
+    padding-left: 8px;
+}
+
+/* ---------------------------------- */
+/* 7. Formulario (Contacto) */
+/* (de chefexpress.css) */
+/* ---------------------------------- */
+.contact-form {
+    width: 100%;
+    margin-top: 24px;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #212121;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 13px; /* 0.8rem */
+    font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #D32F2F;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(211, 47, 47, 0.3);
+}
+
+.contact-form .article-button {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+}
+
+/* ---------------------------------- */
+/* 8. Sidebar (Común) */
+/* ---------------------------------- */
+.main-sidebar {
+    padding-top: 12px;
+}
+
+.widget {
+    margin-bottom: 56px;
+    padding: 24px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Redondeado */
+}
+
+.widget h3, .widget h4 {
+    font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #D32F2F; /* Rojo */
+    padding-bottom: 8px;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 16px;
+    border: 3px solid #D32F2F; /* Rojo */
+}
+
+.subscribe-box {
+    text-align: center;
+    background-color: #D32F2F; /* Rojo */
+    color: white;
+}
+
+.subscribe-box h4 {
+    color: white;
+    border-bottom-color: white;
+}
+
+.subscribe-input {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe-button {
+    background-color: white;
+    border: none;
+    padding: 12px 16px;
+    width: 90%;
+    color: #D32F2F; /* Rojo */
+    font-weight: 900;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.subscribe-button:hover {
+    background-color: #eee;
+}
+
+/* ---------------------------------- */
+/* 9. Botones Especiales y CTA */
+/* ---------------------------------- */
+
+/* Botón Común (de index3.css y chefexpress.css) */
+.article-button {
+    display: inline-block;
+    background-color: #4A4A4A; /* Gris Medio */
+    color: white;
+    padding: 8px 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.article-button:hover {
+    background-color: #D32F2F; /* Rojo */
+    color: white; 
+    text-decoration: none;
+}
+
+.primary-button {
+    background-color: #D32F2F; /* Rojo */
+}
+
+.primary-button:hover {
+    background-color: #4A4A4A; /* Gris Medio */
+}
+
+/* Botón Café (de desayunos.css) */
+.full-width-cta {
+    padding: 56px 5%;
+    background-color: #4A4A4A; /* Gris oscuro */
+    text-align: center;
+    margin-top: 56px;
+    margin-bottom: 56px; 
+}
+
+.cta-button-link {
+    display: inline-block;
+    font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    padding: 24px 56px;
+    border: 2px solid #D32F2F;
+    background-color: #D32F2F; /* Rojo */
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button-link:hover {
+    background-color: white;
+    color: #D32F2F;
+    border-color: #D32F2F;
+}
+
+/* ---------------------------------- */
+/* 10. Modal de Suscripción */
+/* (de chefexpress.css y otros) */
+/* ---------------------------------- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalsub {
+    background-color: #ffffff;
+    padding: 40px; /* 2.5rem */
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 90%;
+}
+
+.modalsub h2 {
+    font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+    color: #D32F2F;
+    margin-bottom: 16px;
+}
+
+.modalsub p {
+    font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+    color: #555;
+    margin-bottom: 24px;
+}
+
+.modalsub .close-modal-btn {
+    background-color: #D32F2F; 
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 24px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.modalsub .close-modal-btn:hover {
+    background-color: #4A4A4A;
+}
+
+/* CLASE .HIDDEN FALTANTE (DE formulario_js.html) */
+.hidden {
+    display: none;
+}
+
+/* ---------------------------------- */
+/* 11. Footer */
+/* ---------------------------------- */
+.main-footer {
+    text-align: center;
+    padding: 24px;
+    border-top: 1px solid #eee;
+    background-color: #f7f7f7;
+    font-size: 14px;
+    color: #555;
+}
+
+.footer-nav a {
+    color: #555;
+    margin: 0 8px;
+}
+
+/* ---------------------------------- */
+/* 12. Media Queries (Responsive) */
+/* ---------------------------------- */
+/* ================================== */
+/* 12. Media Queries (Responsive) */
+/* ================================== */
+@media (max-width: 768px) {
+
+    /* --- Header y Menú Apilado --- */
+    .main-header {
+        /* Permitimos que los elementos (logo y menú) se envuelvan */
+        flex-wrap: wrap; 
+        padding: 16px;
+    }
+
+    .main-nav {
+        /* Hacemos que la navegación ocupe el 100% del ancho */
+        width: 100%;
+        /* Añadimos un espacio arriba (después del logo) */
+        margin-top: 16px; 
+    }
+
+    .nav-list {
+        /* ¡LA MAGIA! Cambiamos la dirección de flex a columna */
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-list li a {
+        /* Estilos para los enlaces apilados */
+        margin-left: 0; /* Reseteamos el margen de escritorio */
+        display: block; /* Hacemos que ocupe todo el ancho */
+        text-align: center; /* Centramos el texto */
+        padding: 12px 0; /* Le damos espacio vertical */
+        border-bottom: 1px solid #f0f0f0; /* Separador */
+    }
+
+    .nav-list li:last-child a {
+        border-bottom: none; /* Quitamos el borde del último item */
+    }
+
+    
+    /* --- Layout Principal --- */
+    .main-container {
+        grid-template-columns: 1fr; /* 1 sola columna */
+        padding: 24px 16px;
+        gap: 30px;
+    }
+
+    .main-sidebar {
+        order: -1; /* Sidebar primero en móvil */
+    }
+    
+    /* --- Portada (index.html) --- */
+    .hero-content h1 {
+        font-size: 32px; /* 2rem */
+    }
+    .category-grid {
+        grid-template-columns: 1fr; /* 1 columna */
+    }
+    .article-card {
+        flex-direction: column; /* Apila imagen sobre texto */
+    }
+    .article-image {
+        width: 100%;
+        height: 220px;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+    .article-info {
+        width: 100%;
+    }
+    .article-info h3 {
+        font-size: 22px;
+    }
+    
+    /* --- Páginas de Categoría --- */
+    .banner-content h1 {
+        font-size: 28px;
+    }
+    .recipe-grid {
+        grid-template-columns: 1fr; /* 1 columna */
+        gap: 24px;
+    }
+
+    /* --- Páginas Estáticas (Café, Sobre Mí) --- */
+    .article-main-image {
+        height: 250px;
+    }
+    .static-article-content h2 {
+        font-size: 24px;
+    }
+    .static-article-content h3 {
+        font-size: 22px;
+    }
+}
