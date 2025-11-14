@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #b6cbed);
+    color: #333;
+    margin: 0;
+    
+}
+h1{
+    color: #000748;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 10px;
+}
+.tabla1 {
+    margin: 40px auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #000000;
+    font-size: 1em;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 12px;
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #000748;
+    font-weight: bold;
+}
+.imagen {
+    display: block; margin: auto;
+    margin: 20px auto;
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+.titulo-foto {
+    text-align: center;
+    color: #000748;
+    font-size: 2em;
+    margin-top: 40px;
+}
+.subtitulo-foto {
+    text-align: center;
+    color: #000748;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+.parrafo-foto {
+    text-align: center;
+    color: #000000;
+    font-size: 1.2em;
+    margin: 20px auto;
+    width: 60%;
+    line-height: 1.6;
+    font-family: "Times New Roman", Times, serif;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+    width: 100%; 
+  }
+  .columna {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 10px;
+  }
+  .columna h3 {
+    margin-bottom: 10px;
+  }
+  .columna li {
+    list-style: none;
+    margin: 5px 0;
+  }
+  .columna a {
+    color: white;
+    text-decoration: none;
+  }
+  .columna a:hover {
+    color: #ffd700;
+  }
+  #columna3 li {
+    display: block;
+  }
+  .volver2 {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 8px 15px;
+    background: #4A90E2;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.3s;
+    cursor: pointer;
+  }
+  .volver2:hover {
+    background: #357ABD;
+  }

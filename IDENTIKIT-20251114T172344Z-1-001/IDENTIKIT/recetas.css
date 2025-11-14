@@ -1,0 +1,96 @@
+/* ESTILOS GENERALES */
+* {
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+}
+
+/* TÍTULO PRINCIPAL */
+h1 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 30px;
+    margin: 20px;
+}
+
+/* CADA RECETA */
+.receta {
+    background-color: antiquewhite;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    width: 80%;
+}
+
+.receta-contenido {
+    display: flex;           /* pone texto e imagen en fila */
+    gap: 20px;               /* espacio entre texto e imagen */
+    align-items: flex-start; /* alinea contenido arriba */
+    margin: 20px;
+}
+
+/* Texto ocupa todo el espacio disponible */
+.texto-receta {
+    flex: 1;
+}
+
+/* Imagen a la derecha */
+.imagen-receta img {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+    width: 100%; 
+  }
+  .columna {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 10px;
+  }
+  .columna h3 {
+    margin-bottom: 10px;
+  }
+  .columna li {
+    list-style: none;
+    margin: 5px 0;
+  }
+  .columna a {
+    color: white;
+    text-decoration: none;
+  }
+  .columna a:hover {
+    color: #ffd700;
+  }
+  #columna3 li {
+    display: block;
+  }
+  .volver2 {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 8px 15px;
+    background: #4A90E2;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.3s;
+    cursor: pointer;
+  }
+  .volver2:hover {
+    background: #357ABD;
+  }

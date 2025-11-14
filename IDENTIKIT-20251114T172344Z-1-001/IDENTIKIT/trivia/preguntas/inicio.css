@@ -1,0 +1,82 @@
+/* ===== Body y Fondo ===== */
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: "DM Sans", sans-serif;
+    background: url('imag-preguntas1/Soccer.jpeg') center/cover no-repeat fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Overlay para oscurecer la imagen y resaltar contenido */
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    width: 90%;
+    max-width: 1000px;
+    padding: 60px 30px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+}
+
+/* ===== Títulos ===== */
+h1 {
+    font-size: 4rem;
+    color: #FFD700; /* dorado para resaltar */
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.7);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+/* ===== Botones ===== */
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap; /* para que se acomoden en móviles */
+}
+
+.Comenzar, .volver {
+    padding: 20px 50px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Colores diferenciados para los botones */
+.Comenzar {
+    background-color: #28a745; /* verde */
+}
+
+.volver {
+    background-color: #dc3545; /* rojo */
+}
+
+/* Hover elegante */
+.Comenzar:hover {
+    background-color: #218838;
+    transform: translateY(-5px) scale(1.05);
+}
+
+.volver:hover {
+    background-color: #c82333;
+    transform: translateY(-5px) scale(1.05);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    h1 { font-size: 3rem; }
+    h2 { font-size: 1.6rem; }
+    .Comenzar, .volver { font-size: 1.6rem; padding: 15px 30px; }
+}

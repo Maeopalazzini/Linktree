@@ -1,0 +1,52 @@
+/* ===== Body ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    background: linear-gradient(to bottom, #6dd5ed, #2193b0);
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== Encabezados ===== */
+h1 {
+    font-size: 100px;          /* más grande para el mensaje principal */
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+h2 {
+    font-size: 40px;          /* secundario más pequeño */
+    margin-bottom: 15px;
+    font-weight: 500;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+    color: green;
+}
+
+h3 {
+    font-size: 20px;          /* más descriptivo, pequeño que h2 */
+    margin-bottom: 40px;
+    font-weight: 400;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+/* ===== Imagen ===== */
+a img {
+    width: 300px;             /* más grande */
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;          /* el puntero cambia al pasar el mouse */
+}
+
+a img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.6);
+}
